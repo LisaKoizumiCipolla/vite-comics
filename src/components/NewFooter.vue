@@ -3,8 +3,57 @@
         <div class="main-footer-container">
 
             <div class="main-footer wrapper">
-                <div class="links">
-                    blablabla
+                <div class="links flex">
+
+                    <div>
+                        <div>
+                            <h2>DC COMICS</h2>
+                            <ul class="link-list">
+                                <li>Characters</li>
+                                <li>Comics</li>
+                                <li>Movies</li>
+                                <li>TV</li>
+                                <li>Games</li>
+                                <li>Videos</li>
+                                <li>News</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>SHOP</h2>
+                            <ul class="link-list">
+                                <li>Shop DC</li>
+                                <li>Shop DC Collectibles</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>DC</h2>
+                        <ul class="link-list">
+                            <li>Terms Of Use</li>
+                            <li>Privacy policy (New)</li>
+                            <li>Ad Choices</li>
+                            <li>Advertising</li>
+                            <li>Jobs</li>
+                            <li>Subscriptions</li>
+                            <li>Talent Workshops</li>
+                            <li>CPSC Certificates</li>
+                            <li>Ratings</li>
+                            <li>Shop Help</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>SITES</h2>
+                        <ul class="link-list">
+                            <li>DC</li>
+                            <li>MAD Magazinbe</li>
+                            <li>DC Kids</li>
+                            <li>DC Universe</li>
+                            <li>DC Power Visa</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="logo">
                     <img src="../assets/img/dc-logo-bg.png" alt="">
@@ -17,8 +66,8 @@
             <div class="contacts wrapper">
                 <div class="button">SIGN-UP NOW!</div>
                 <nav>
-                    <h2>FOLLOW US</h2>
-                    <ul class="flex">
+                    <h2 class="follow">FOLLOW US</h2>
+                    <ul class="flex logos">
                         <li>
                             <img src="../assets/img/footer-facebook.png" alt="">
                         </li>
@@ -61,10 +110,34 @@ export default{
     }
     .main-footer{
         height: 100%;
-        margin: auto;
+        margin: 0 auto;
         @include flex(row, space-between, center);
         overflow: hidden;
         color: white;
+    }
+
+    h2{
+        color: white;
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-right: 5px;
+        align-self: center;
+    }
+
+    .links{
+        
+    @include flex(row, start, flex-start);
+
+        ul{
+            margin: 20px 50px 20px 0;
+
+            li{
+            @include flex(column, start, flex-start);
+            color: #797979;
+            font-size: .85rem;
+            line-height: 1.5;
+            }
+        }
     }
 
     .contacts-container{
@@ -95,23 +168,20 @@ export default{
         display: flex;
     }
 
-    ul{
+    .logos{
         @include flex(row, center, center);
-    }
 
-    li{
+        li{
         color: #474747;
         border-radius: 50%;
         height: 30px;
         width: 30px;
         margin-left: 25px;
+        }
+
     }
 
-    h2{
+    .follow{
         color: #0282F9;
-        font-size: 1.35rem;
-        font-weight: 700;
-        margin-right: 5px;
-        align-self: center;
     }
 </style>
