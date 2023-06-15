@@ -14,16 +14,16 @@ export default{
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
     .main-section{
-        height: 140px;
+        height: 130px;
         background-image:url(../assets/img/jumbotron.jpg);
         object-fit: scale-down;
     }
 
     .bonus-section{
-        height: 160px;
+        height: 150px;
         background-color: #0282F9;
     }
 </style>
