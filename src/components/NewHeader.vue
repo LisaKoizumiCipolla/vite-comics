@@ -5,7 +5,7 @@
         </div>
         <div>
             <ul class="flex">
-                <li v-for="links in headerNavbar">
+                <li v-for="links in headerNavbar" :class="links.selected ? 'selected' : ''">
                 {{ links.text }}
                 </li>
             </ul>
@@ -96,11 +96,19 @@ img{
 }
 
 li{
-    padding-left: 10px;
+    padding-left: 30px;
+    font-size: .85rem;
+    font-weight: 700;
+    color: #1C1C1C;
 
     &:hover{
     color: #0282F9;
+    cursor: pointer;
 }
+}
+
+.selected{
+    color: #0282F9;
 }
     
 </style>

@@ -17,8 +17,24 @@
             <div class="contacts wrapper">
                 <div class="button">SIGN-UP NOW!</div>
                 <nav>
-                    lgjrlkgjlgam
-
+                    <h2>FOLLOW US</h2>
+                    <ul class="flex">
+                        <li>
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -67,6 +83,35 @@ export default{
         color: white;
         border: 2px solid #0282F9;
         padding: 15px;
-        font-weight: 600;
+        font-weight: 500;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #474747;
+        }
+    }
+
+    nav{
+        display: flex;
+    }
+
+    ul{
+        @include flex(row, center, center);
+    }
+
+    li{
+        color: #474747;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 25px;
+    }
+
+    h2{
+        color: #0282F9;
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-right: 5px;
+        align-self: center;
     }
 </style>
