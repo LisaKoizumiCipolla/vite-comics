@@ -156,7 +156,7 @@ export default{
         color: white;
         border: 2px solid #0282F9;
         padding: 15px;
-        font-weight: 500;
+        font-weight: 700;
 
         &:hover{
             cursor: pointer;
@@ -177,6 +177,10 @@ export default{
         height: 30px;
         width: 30px;
         margin-left: 25px;
+
+            &:hover{
+                        cursor: pointer;
+                    }
         }
 
     }

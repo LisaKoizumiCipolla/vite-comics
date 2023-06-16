@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="comics-wrapper">
         <SingleComic v-for="comicObj in productList"
             :comicElement="comicObj"
         />
@@ -93,5 +93,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    
+    .comics-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 </style>
