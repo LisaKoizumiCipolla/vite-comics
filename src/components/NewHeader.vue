@@ -18,57 +18,57 @@ export default{
         data() {
             return{
                 headerNavbar : [
-                {
-                    text: "CHARACTERS",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "COMICS",
-                    link: "#",
-                    selected: true
-                },
-                {
-                    text: "MOVIES",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "TV",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "GAMES",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "COLLECTIBLES",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "VIDEOS",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "FANS",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "NEWS",
-                    link: "#",
-                    selected: false
-                },
-                {
-                    text: "SHOP",
-                    link: "#",
-                    selected: false
-                },
-            ]
+                    {
+                        text: "CHARACTERS",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "COMICS",
+                        link: "#",
+                        selected: true
+                    },
+                    {
+                        text: "MOVIES",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "TV",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "GAMES",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "COLLECTIBLES",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "VIDEOS",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "FANS",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "NEWS",
+                        link: "#",
+                        selected: false
+                    },
+                    {
+                        text: "SHOP",
+                        link: "#",
+                        selected: false
+                    },
+                ],
 
             }
         }
