@@ -1,6 +1,21 @@
 <template>
     <main>
-        <div class="main-section"></div>
+        <div class="jumbotron">
+
+        </div>
+
+        <div class="main-section">
+            <div class="wrapper">
+                <div class="label">
+                    CURRENT SERIES
+                </div>
+                    <ComicsList />
+                <div class="button">
+                    LOAD MORE
+                </div>
+            </div>
+        </div>
+
         <div class="bonus-section flex">
             <div class="wrapper">
                 <ul class="flex">
@@ -31,10 +46,16 @@
 </template>
 
 <script>
+import ComicsList from './ComicsList.vue'
+
 export default{
         data() {
             return{
             }
+        },
+
+        components : {
+            ComicsList
         }
     }
 </script>
@@ -43,10 +64,16 @@ export default{
 
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
-    .main-section{
+    .jumbotron{
         height: 400px;
         background-image:url(../assets/img/jumbotron.jpg);
         object-fit: scale-down;
+    }
+
+    .main-section {
+        position: relative;
+        background-color: #1c1c1c;
+        color: white;
     }
 
     .bonus-section{
