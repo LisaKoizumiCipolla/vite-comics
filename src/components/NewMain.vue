@@ -44,7 +44,7 @@ export default{
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
     .main-section{
-        height: 130px;
+        height: 400px;
         background-image:url(../assets/img/jumbotron.jpg);
         object-fit: scale-down;
     }
